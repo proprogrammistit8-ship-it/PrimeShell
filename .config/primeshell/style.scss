@@ -1,0 +1,43 @@
+$fg-color: #{"@theme_fg_color"};
+$bg-color: #{"@theme_bg_color"};
+
+$primary: #ffb5a0; // Дальше цвета.
+$on-primary: #561f0f;
+$primary-container: #723523;
+$on-primary-container: #ffdbd1;
+
+$inverse-primary: #8f4c38;
+
+$secondary: #e7bdb2;
+$on-secondary: #442a22;
+$secondary-container: #5d4037;
+$on-secondary-container: #ffdbd1;
+
+$tertiary: #d8c58d;
+$on-tertiary: #3b2f05;
+$tertiary-container: #534619;
+$on-tertiary-container: #f5e1a7;
+
+$errror: #ffb4ab;
+$on-error: #690005;
+$error-container: #93000a;
+$on-error-container: #ffdad6;
+
+$surface-dim: #1a110f;
+$surface: #1a110f;
+$surface-bright: #423734;
+$surface-container-lowest: #140c0a;
+$surface-container-low: #231917;
+$surface-container: #271d1b;
+$surface-container-high: #322825;
+$surface-container-highest: #3d322f;
+$on-surface: #f1dfda;
+$on-surface-var: #d8c2bc;
+$inverse-on-surface: #392e2b;
+$inverse-surface: #f1dfda;
+
+$outline: #a08c87;
+$outline-variant: #53433f;
+
+$scrim: #000000;
+$shadow: #000000;

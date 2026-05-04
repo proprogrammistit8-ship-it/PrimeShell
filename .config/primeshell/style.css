@@ -1,0 +1,314 @@
+@define-color on-primary #ffb5a0;
+@define-color primary #561f0f;
+@define-color primary-container #723523;
+@define-color on-primary-container #ffdbd1;
+
+@define-color inverse-primary #8f4c38;
+
+@define-color secondary #e7bdb2;
+@define-color on-secondary #442a22;
+@define-color secondary-container #5d4037;
+@define-color on-secondary-container #ffdbd1;
+
+@define-color tertiary #d8c58d;
+@define-color on-tertiary #3b2f05;
+@define-color tertiary-container #534619;
+@define-color on-tertiary-container #f5e1a7;
+
+@define-color error #ffb4ab;
+@define-color on-error #690005;
+@define-color error-container #93000a;
+@define-color on-error-container #ffdad6;
+
+@define-color surface-dim #1a110f;
+@define-color surface #1a110f;
+@define-color surface-bright #423734;
+@define-color surface-container-lowest #140c0a;
+@define-color surface-container-low #231917;
+@define-color surface-container #271d1b;
+@define-color surface-container-high #322825;
+@define-color surface-container-highest #3d322f;
+@define-color on-surface #f1dfda;
+@define-color on-surface-var #d8c2bc;
+@define-color inverse-on-surface #392e2b;
+@define-color inverse-surface #f1dfda;
+
+@define-color outline #a08c87;
+@define-color outline-variant #53433f;
+
+@define-color scrim #000000;
+@define-color shadow #000000;
+
+* {
+    text-shadow: none;
+}
+
+#bar-body {
+    background-color: @surface; /* Используем через @ */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    /*min-width: 30px;*/
+    padding: 2px;
+}
+
+/* ИСПОЛЬЗОВАНИЕ: */
+#bar {
+    background-color: @surface; /* Используем через @ */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    min-width: 400px;
+    padding: 15px;
+}
+
+
+#time {
+    border-radius: 15px;
+    transition: all 200ms ease-out;
+    margin: 8px;
+    min-height: 30px;
+    min-width: 150px;
+    padding-left: 22px;
+    background-color: @on-secondary;
+    color: @on-primary-container;
+    
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    /* height: 30px; -- Не работает*/ 
+}
+
+#time:hover {
+    background-color: @secondary-container;
+    border-radius: 1000px;
+}
+#time:active {
+    background-color: @inverse-primary;
+    color: @on-secondary;
+}
+
+#debug-button {
+    border-radius: 15px;
+    transition: all 200ms ease-out;
+    margin: 8px;
+    min-height: 30px;
+    min-width: 150px;
+    padding-left: 22px;
+    background-color: @on-secondary;
+    color: @on-primary-container;
+    
+    background-image: none;
+    box-shadow: none;
+    border: none;
+}
+
+#debug_button:hover {
+    background-color: @secondary-container;
+}
+#debug_button:active {
+    background-color: @inverse-primary;
+}
+
+#workspaces-module {
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    background-color: @on-secondary;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 30px;
+}
+
+#worksapce-module-button {
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    background-color: @secondary-container;
+    min-width: 20px;
+    min-height: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 20px;
+    padding: 10px;
+    color: @on-primary-container;
+    /*font-size: 5px;*/
+}
+
+#worksapce-module-button.active {
+    color: @inverse-primary;
+    background-color: @secondary;
+}
+
+#worksapce-module-button:hover {
+    background-color: @inverse-primary;
+    color: @secondary;
+    border-radius: 1000px;
+}
+
+#language-module {
+    all: unset;
+    min-width: 110px;
+    background-color: @on-secondary;
+    color: @secondary;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 0.2s;
+}
+
+#language-module:hover {
+    background-color: @secondary-container;
+    border-radius: 1000px;
+}
+
+#language-module:active {
+    background-color: @inverse-primary;
+    color: @on-secondary;
+}
+
+#network-module {
+    all: unset;
+    background-color: @on-secondary;
+    color: @secondary;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.2s;
+    min-width: 20px;
+}
+
+#network-module>label {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#network-module:hover {
+    background-color: @secondary-container;
+    border-radius: 1000px;
+}
+
+#network-module:active {
+    background-color: @inverse-primary;
+    color: @on-secondary;
+}
+
+#active-window-module {
+    all: unset;
+    min-width: 110px;
+    background-color: @on-secondary;
+    color: @secondary;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 0.2s;
+}
+
+#active-window-module:hover {
+    background-color: @secondary-container;
+    border-radius: 1000px;
+}
+
+#active-window-module:active {
+    background-color: @inverse-primary;
+    color: @on-secondary;
+}
+
+#os-button {
+    all: unset;
+    min-width: 50px;
+    background-color: @on-secondary;
+    color: @secondary;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 2px;
+    padding-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.2s;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+#os-button:hover {
+    background-color: @secondary-container;
+    border-radius: 1000px;
+}
+
+#os-button:active {
+    background-color: @inverse-primary;
+    color: @on-secondary;
+}
+
+#dashboard-button {
+    all: unset;
+    min-width: 50px;
+    background-color: @on-secondary;
+    color: @secondary;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 2px;
+    padding-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    transition: 0.2s;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+#dashboard-button:hover {
+    background-color: @secondary-container;
+    border-radius: 1000px;
+}
+
+#dashboard-button:active {
+    background-color: @inverse-primary;
+    color: @on-secondary;
+}
+
+
+
+
+
+
+
+
+
+#progressbar {
+    color: #ff8800; /* Цвет активной части (оранжевый) */
+    background-color: rgba(255, 136, 0, 0.2); /* Цвет дорожки */
+}

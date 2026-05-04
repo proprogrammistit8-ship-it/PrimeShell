@@ -1,0 +1,15 @@
+background = #17181A
+
+# Вместо cursor-invert-fg-ascii используй это:
+cursor-style = block
+shell-integration-features = no-cursor
+
+# Плавное мигание в 1.3.1 делается так:
+cursor-opacity = 1.0
+# Чтобы курсор не мигал резко, можно просто его зафиксировать:
+#cursor-blink = false 
+
+#window-background-opacity = 0.8
+#window-blur-radius = 20
+background-blur = true
+background-opacity = 0.9
